@@ -1,26 +1,32 @@
 {
-  "name": "otp-bomber-api-voice",
-  "version": "2.0.0",
-  "description": "Voice & WhatsApp Only OTP Bombing API Server",
-  "main": "api_server_voice.js",
+  "name": "otp-bomber-api-server",
+  "version": "1.0.0",
+  "description": "OTP Bombing API Server - Multi-API aggregator for Render deployment",
+  "main": "api_server.js",
   "scripts": {
-    "start": "node api_server_voice.js"
-  },
-  "dependencies": {
-    "axios": "^1.4.0",
-    "cors": "^2.8.5",
-    "express": "^4.18.2"
-  },
-  "engines": {
-    "node": ">=16.0.0"
+    "start": "node api_server.js",
+    "dev": "nodemon api_server.js"
   },
   "keywords": [
     "otp",
-    "bomb",
+    "bomber",
+    "api",
+    "sms",
     "voice",
     "whatsapp",
-    "api"
+    "aggregator"
   ],
-  "author": "Your Name",
-  "license": "MIT"
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
 }
